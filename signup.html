@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
+    <style>
+        *{
+            font-family: 'Roboto';
+        }
+        body{
+            margin: 0;
+        }
+        .login {
+            width: 100vw;
+            min-height: 100vh;
+            background: linear-gradient(to bottom right,#6441A5,#3498db)
+        }
+
+        .container {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            box-shadow:1px 1px 30px rgba(0,0,0,0.3);
+            
+            width: 350px;
+            padding: 70px 30px 50px 30px;
+            background: white;
+            border-radius: 10px;
+        }
+       
+        form input{
+            padding: 15px 0 10px 0px;
+            border: none;
+           
+            border-bottom: 1px solid rgba(0,0,0,0.5);
+            font-size: 16px;
+           
+        }
+        .form_item{
+            display: flex;
+            flex-direction: column;
+
+            margin-bottom: 10px;
+        }
+        .form_item span{
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+        .form_links{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+        form button{
+            border:none;
+            background: linear-gradient(to right,rgb(228, 46, 182),rgb(226, 10, 93));
+            color: white;
+            font-size: 20px;
+            padding: 10px 0;
+
+            box-shadow: 1px 1px 40px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+
+<body>
+    <section class="login">
+        <div class="container">
+            <form action="" id="signupform">
+                <div class="form_item">
+                    <span>Email</span>
+                    <input name="email" placeholder="example@example.com" required="true" type="email">
+                </div>
+                <div class="form_item">
+                    <span>Username</span>
+                    <input name="username" placeholder="example@example.com" required="true" type="text">
+                </div>
+                <div class="form_item">
+                    <span>Company</span>
+                    <input name="company" placeholder="example@example.com" required="true" type="text">
+                </div>
+                <div class="form_item">
+                    <span>Phone Number</span>
+                    <input name="phone" placeholder="example@example.com" required="true" type="number">
+                </div>
+                <div class="form_item">
+                    <span>Password</span>
+                    <input placeholder="your password" name="pswd" required="true" type="password">
+                </div>
+                <div class="form_item">
+                    <span>Confirm Password</span>
+                    <input placeholder="Confirm password" name="cpswd" required="true" type="password">
+                </div>
+                <div class="form_links">
+                    <span>Already had an account?</span>
+                    <a href="">login</a>
+                </div>  
+                <button id="signupbtn" type="submit">Sign Up</button>
+            </form>
+        </div>
+    </section>
+    <script src="./signup.js"></script>
+</body>
+
+</html>

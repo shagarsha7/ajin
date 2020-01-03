@@ -1,0 +1,89 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+/* main */
+
+main{
+    background: #f2f2f2;
+}
+
+.one{
+
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    
+}
+.one >div{
+    background: white;
+    padding: 30px;
+    margin:20px;
+    box-shadow: 1px 1px 20px rgba(0,0,0,0.1);
+    align-self: flex-start;
+    max-width: 500px;
+   
+}
+
+.token{
+    margin-bottom: 20px;
+    border: 1px solid rgba(0,0,0,0.1);
+    padding: 5px;
+}
+.token_details h3{
+    margin:0;
+    padding: 0;
+    color: rgba(0,0,0,0.9);
+    font-weight: lighter;
+}
+.token_details{
+    margin-bottom:8px;
+}
+.token span{
+    word-break: break-all;
+}
+.token_value{
+    color: rgba(0,0,0,0.7);
+    line-height: 1.4;
+}
+.token_footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tokens_footer{
+    display: flex;
+    justify-content: space-between;
+}
+.tokens_footer button{
+    border: none;
+    color: white;
+    background: cornflowerblue;
+    border-radius: 20px;
+    font-size: 18px;
+    padding: 5px 16px;
+    box-shadow: 1px 1px 30px rgba(61, 45, 45, 0.3);
+}
+.tokens_footer button:nth-child(2){
+    background: white;
+    color: cornflowerblue;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+.plans > h1{
+    font-weight: lighter;
+}
+.plan> span{
+    font-size: 20px;
+} 
+.plan p{
+    margin: 0;
+    padding:0;
+    margin: 10px 0;
+    font-size: 18px;
+    color: rgba(0,0,0,0.7);
+}
